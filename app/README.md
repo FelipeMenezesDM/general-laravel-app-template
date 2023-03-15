@@ -33,8 +33,8 @@
 #### Entradas
 
 <details><summary>Header</summary>
-<table style="text-align: left;">
-    <thead>
+<table>
+    <thead style="text-align: left;">
         <th style="width: 25%;">Nome</th>
         <th>Descrição</th>
         <th style="width: 5%;text-align: center;">Tipo</th>
