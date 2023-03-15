@@ -33,6 +33,7 @@
 | Tipo       | Nome              | Descrição                                                            |     Tipo      | Obrigatório | Exemplo                                |
 |------------|:------------------|----------------------------------------------------------------------|:-------------:|:-----------:|----------------------------------------|
 | **Header** | **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string (Uuid) |     Sim     | _b72645e9-3bfb-4423-b983-0e7d47c425a5_ |
+| ^^         | **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string (Uuid) |     Sim     | _b72645e9-3bfb-4423-b983-0e7d47c425a5_ |
 | **Path**   | **id**            | Id do registro da coleção                                            | string (Uuid) |     Sim     | _f3269126-6861-40b4-98ce-5cfbca94aff1_ |
 | **Query**  | **filtro1**       | Filtro adicional para a ro                                           |    boolean    |     Não     | true                                   |
 | **Body**   | **description**   |                                                                      |               |             |                                        |
