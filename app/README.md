@@ -35,11 +35,11 @@
 <details><summary>Header</summary>
 <table>
     <thead>
-        <th width="25%" style="width: 25%; text-align: left;">Nome</th>
-        <th style="text-align: left;">Descrição</th>
-        <th width="5%" style="width: 5%;">Tipo</th>
-        <th width="5%" style="width: 5%;">Obrigatório</th>
-        <th width="25%" style="width: 25%; text-align: left;" class="th-example">Exemplo</th>
+        <th width="25%" align="left">Nome</th>
+        <th align="left">Descrição</th>
+        <th width="5%">Tipo</th>
+        <th width="5%">Obrigatório</th>
+        <th width="25%" align="left">Exemplo</th>
     </thead>
     <tbody style="vertical-align: top;">
         <tr>
@@ -56,11 +56,11 @@
 <details><summary>Path</summary>
 <table style="text-align: left;">
     <thead>
-        <th style="width: 25%;">Nome</th>
-        <th>Descrição</th>
-        <th style="width: 5%;text-align: center;">Tipo</th>
-        <th style="width: 5%;text-align: center;">Obrigatório</th>
-        <th style="width: 25%;" class="th-example">Exemplo</th>
+        <th width="25%" align="left">Nome</th>
+        <th align="left">Descrição</th>
+        <th width="5%">Tipo</th>
+        <th width="5%">Obrigatório</th>
+        <th width="25%" align="left">Exemplo</th>
     </thead>
     <tbody style="vertical-align: top;">
         <tr>
@@ -77,11 +77,11 @@
 <details><summary>Query</summary>
 <table style="text-align: left;">
     <thead>
-        <th style="width: 25%;">Nome</th>
-        <th>Descrição</th>
-        <th style="width: 5%;text-align: center;">Tipo</th>
-        <th style="width: 5%;text-align: center;">Obrigatório</th>
-        <th style="width: 25%;" class="th-example">Exemplo</th>
+        <th width="25%" align="left">Nome</th>
+        <th align="left">Descrição</th>
+        <th width="5%">Tipo</th>
+        <th width="5%">Obrigatório</th>
+        <th width="25%" align="left">Exemplo</th>
     </thead>
     <tbody style="vertical-align: top;">
         <tr>
@@ -98,11 +98,11 @@
 <details><summary>Body</summary>
 <table style="text-align: left;">
     <thead>
-        <th style="width: 25%;">Nome</th>
-        <th>Descrição</th>
-        <th style="width: 5%;text-align: center;">Tipo</th>
-        <th style="width: 5%;text-align: center;">Obrigatório</th>
-        <th style="width: 25%;" class="th-example">Exemplo</th>
+        <th width="25%" align="left">Nome</th>
+        <th align="left">Descrição</th>
+        <th width="5%">Tipo</th>
+        <th width="5%">Obrigatório</th>
+        <th width="25%" align="left">Exemplo</th>
     </thead>
     <tbody style="vertical-align: top;">
         <tr>
