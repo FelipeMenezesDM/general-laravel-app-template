@@ -32,95 +32,85 @@
 
 #### Entradas
 
-<style>
-.general-doc-table th{text-align: left;}
-.general-doc-table td{vertical-align: top;}
-.general-doc-table td.td-name{font-weight: bold;}
-.general-doc-table th.th-name{width:25%;}
-.general-doc-table th.th-type{width:5%;text-align: center;}
-.general-doc-table th.th-required{width:5%;text-align: center;}
-.general-doc-table th.th-example{width:25%;}
-</style>
-
 <details><summary>Header</summary>
-<table class="general-doc-table">
+<table style="text-align: left;">
     <thead>
-        <th class="th-name">Nome</th>
-        <th class="th-description">Descrição</th>
-        <th class="th-type">Tipo</th>
-        <th class="th-required">Obrigatório</th>
-        <th class="th-example">Exemplo</th>
+        <th style="width: 25%;">Nome</th>
+        <th>Descrição</th>
+        <th style="width: 5%;text-align: center;">Tipo</th>
+        <th style="width: 5%;text-align: center;">Obrigatório</th>
+        <th style="width: 25%;" class="th-example">Exemplo</th>
     </thead>
-    <tbody>
+    <tbody style="vertical-align: top;">
         <tr>
-            <td class="td-name">CorrelationId</td>
-            <td class="td-description">Identificador único da requisição para reateamento de correlacionado</td>
-            <td class="td-type">string (Uuid)</td>
-            <td class="td-required">Sim</td>
-            <td class="td-example"><i>b72645e9-3bfb-4423-b983-0e7d47c425a5</i></td>
+            <td style="font-weight: bold;">CorrelationId</td>
+            <td>Identificador único da requisição para reateamento de correlacionado</td>
+            <td>string (Uuid)</td>
+            <td>Sim</td>
+            <td><i>b72645e9-3bfb-4423-b983-0e7d47c425a5</i></td>
         </tr>
     </tbody>
 </table>
 </details>
 
 <details><summary>Path</summary>
-<table class="general-doc-table">
+<table style="text-align: left;">
     <thead>
-        <th class="th-name">Nome</th>
-        <th class="th-description">Descrição</th>
-        <th class="th-type">Tipo</th>
-        <th class="th-required">Obrigatório</th>
-        <th class="th-example">Exemplo</th>
+        <th style="width: 25%;">Nome</th>
+        <th>Descrição</th>
+        <th style="width: 5%;text-align: center;">Tipo</th>
+        <th style="width: 5%;text-align: center;">Obrigatório</th>
+        <th style="width: 25%;" class="th-example">Exemplo</th>
     </thead>
-    <tbody>
+    <tbody style="vertical-align: top;">
         <tr>
-            <td class="td-name">id</td>
-            <td class="td-description">Id do registro da coleção</td>
-            <td class="td-type">string (Uuid)</td>
-            <td class="td-required">Sim</td>
-            <td class="td-example"><i>f3269126-6861-40b4-98ce-5cfbca94aff1</i></td>
+            <td style="font-weight: bold;">id</td>
+            <td>Id do registro da coleção</td>
+            <td>string (Uuid)</td>
+            <td>Sim</td>
+            <td><i>f3269126-6861-40b4-98ce-5cfbca94aff1</i></td>
         </tr>
     </tbody>
 </table>
 </details>
 
 <details><summary>Query</summary>
-<table class="general-doc-table">
+<table style="text-align: left;">
     <thead>
-        <th class="th-name">Nome</th>
-        <th class="th-description">Descrição</th>
-        <th class="th-type">Tipo</th>
-        <th class="th-required">Obrigatório</th>
-        <th class="th-example">Exemplo</th>
+        <th style="width: 25%;">Nome</th>
+        <th>Descrição</th>
+        <th style="width: 5%;text-align: center;">Tipo</th>
+        <th style="width: 5%;text-align: center;">Obrigatório</th>
+        <th style="width: 25%;" class="th-example">Exemplo</th>
     </thead>
-    <tbody>
+    <tbody style="vertical-align: top;">
         <tr>
-            <td class="td-name">filtro1</td>
-            <td class="td-description">Filtro adicional para a rota</td>
-            <td class="td-type">boolean</td>
-            <td class="td-required">Não</td>
-            <td class="td-example">true</td>
+            <td style="font-weight: bold;">filtro1</td>
+            <td>Filtro adicional para a rota</td>
+            <td>boolean</td>
+            <td>Não</td>
+            <td>true</td>
         </tr>
     </tbody>
 </table>
 </details>
 
 <details><summary>Body</summary>
-<table class="general-doc-table">
+<table style="text-align: left;">
     <thead>
-        <th class="th-name">Nome</th>
-        <th class="th-description">Descrição</th>
-        <th class="th-type">Tipo</th>
-        <th class="th-required">Obrigatório</th>
-        <th class="th-example">Exemplo</th>
+        <th style="width: 25%;">Nome</th>
+        <th>Descrição</th>
+        <th style="width: 5%;text-align: center;">Tipo</th>
+        <th style="width: 5%;text-align: center;">Obrigatório</th>
+        <th style="width: 25%;" class="th-example">Exemplo</th>
     </thead>
-    <tbody>
+    <tbody style="vertical-align: top;">
         <tr>
-            <td class="td-name">description</td>
-            <td class="td-description">Descrição para o novo registro</td>
-            <td class="td-type">string</td>
-            <td class="td-required">Sim</td>
-            <td class="td-example">**</td>
+            <td style="font-weight: bold;">description</td>
+            <td>Descrição para o novo registro</td>
+            <td>string</td>
+            <td>Sim</td>
+            <td>**</td>
         </tr>
     </tbody>
 </table>
