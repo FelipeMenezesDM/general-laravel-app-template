@@ -28,10 +28,9 @@
 {{ Informar todos os endpoints disponíveis nesta aplicação, de acordo com o modelo abaixo }}
 
 ### POST • /end-points/{id}
-{{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes }}
+{{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes, removendo os que não são necessários }}
 
 #### Entradas
-
 <details><summary>Header</summary>
 <table>
     <thead align="left">
@@ -52,7 +51,6 @@
     </tbody>
 </table>
 </details>
-
 <details><summary>Path</summary>
 <table>
     <thead align="left">
@@ -73,7 +71,6 @@
     </tbody>
 </table>
 </details>
-
 <details><summary>Query</summary>
 <table>
     <thead align="left">
@@ -94,7 +91,6 @@
     </tbody>
 </table>
 </details>
-
 <details><summary>Body</summary>
 <table>
     <thead align="left">
@@ -117,6 +113,13 @@
 </details>
 
 #### Saídas
+<details><summary>200 OK</summary>
+<pre>
+{
+    "description": "Descrição do registro"
+}
+</pre>
+</details>
 
 ## Integrações
 {{ Informar lista não numerada de todos os serviços externos ou internos utilizados pela aplicação }}
