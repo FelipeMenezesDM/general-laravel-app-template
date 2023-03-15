@@ -34,19 +34,19 @@
 
 <details><summary>Header</summary>
 <table>
-    <thead>
-        <th width="25%" align="left">Nome</th>
-        <th align="left">Descrição</th>
+    <thead align="left">
+        <th width="25%">Nome</th>
+        <th>Descrição</th>
         <th width="5%">Tipo</th>
         <th width="5%">Obrigatório</th>
-        <th width="25%" align="left">Exemplo</th>
+        <th width="25%">Exemplo</th>
     </thead>
-    <tbody style="vertical-align: top;">
+    <tbody valign="top" align="left">
         <tr>
-            <td style="font-weight: bold;">CorrelationId</td>
+            <td><b>CorrelationId</b></td>
             <td>Identificador único da requisição para reateamento de correlacionado</td>
-            <td>string (Uuid)</td>
-            <td>Sim</td>
+            <td align="center">string (Uuid)</td>
+            <td align="center">Sim</td>
             <td><i>b72645e9-3bfb-4423-b983-0e7d47c425a5</i></td>
         </tr>
     </tbody>
@@ -54,20 +54,20 @@
 </details>
 
 <details><summary>Path</summary>
-<table style="text-align: left;">
-    <thead>
-        <th width="25%" align="left">Nome</th>
-        <th align="left">Descrição</th>
+<table>
+    <thead align="left">
+        <th width="25%">Nome</th>
+        <th>Descrição</th>
         <th width="5%">Tipo</th>
         <th width="5%">Obrigatório</th>
-        <th width="25%" align="left">Exemplo</th>
+        <th width="25%">Exemplo</th>
     </thead>
-    <tbody style="vertical-align: top;">
+    <tbody valign="top" align="left">
         <tr>
-            <td style="font-weight: bold;">id</td>
+            <td><b>id</b></td>
             <td>Id do registro da coleção</td>
-            <td>string (Uuid)</td>
-            <td>Sim</td>
+            <td align="center">string (Uuid)</td>
+            <td align="center">Sim</td>
             <td><i>f3269126-6861-40b4-98ce-5cfbca94aff1</i></td>
         </tr>
     </tbody>
@@ -75,20 +75,20 @@
 </details>
 
 <details><summary>Query</summary>
-<table style="text-align: left;">
-    <thead>
-        <th width="25%" align="left">Nome</th>
-        <th align="left">Descrição</th>
+<table>
+    <thead align="left">
+        <th width="25%">Nome</th>
+        <th>Descrição</th>
         <th width="5%">Tipo</th>
         <th width="5%">Obrigatório</th>
-        <th width="25%" align="left">Exemplo</th>
+        <th width="25%">Exemplo</th>
     </thead>
-    <tbody style="vertical-align: top;">
+    <tbody valign="top" align="left">
         <tr>
-            <td style="font-weight: bold;">filtro1</td>
+            <td><b>filtro1</b></td>
             <td>Filtro adicional para a rota</td>
-            <td>boolean</td>
-            <td>Não</td>
+            <td align="center">boolean</td>
+            <td align="center">Não</td>
             <td>true</td>
         </tr>
     </tbody>
@@ -96,21 +96,21 @@
 </details>
 
 <details><summary>Body</summary>
-<table style="text-align: left;">
-    <thead>
-        <th width="25%" align="left">Nome</th>
-        <th align="left">Descrição</th>
+<table>
+    <thead align="left">
+        <th width="25%">Nome</th>
+        <th>Descrição</th>
         <th width="5%">Tipo</th>
         <th width="5%">Obrigatório</th>
-        <th width="25%" align="left">Exemplo</th>
+        <th width="25%">Exemplo</th>
     </thead>
-    <tbody style="vertical-align: top;">
+    <tbody valign="top" align="left">
         <tr>
-            <td style="font-weight: bold;">description</td>
+            <td><b>description</b></td>
             <td>Descrição para o novo registro</td>
-            <td>string</td>
-            <td>Sim</td>
-            <td>**</td>
+            <td align="center">string</td>
+            <td align="center">Sim</td>
+            <td>***</td>
         </tr>
     </tbody>
 </table>
