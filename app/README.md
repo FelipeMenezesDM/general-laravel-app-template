@@ -35,11 +35,11 @@
 <details><summary>Header</summary>
 <table>
     <thead>
-        <th style="width: 25%; text-align: left;">Nome</th>
+        <th width="25%" style="width: 25%; text-align: left;">Nome</th>
         <th style="text-align: left;">Descrição</th>
-        <th style="width: 5%;">Tipo</th>
-        <th style="width: 5%;">Obrigatório</th>
-        <th style="width: 25%; text-align: left;" class="th-example">Exemplo</th>
+        <th width="5%" style="width: 5%;">Tipo</th>
+        <th width="5%" style="width: 5%;">Obrigatório</th>
+        <th width="25%" style="width: 25%; text-align: left;" class="th-example">Exemplo</th>
     </thead>
     <tbody style="vertical-align: top;">
         <tr>
