@@ -34,7 +34,7 @@
 
 <details><summary>Header</summary>
 <table>
-    <thead style="text-align: left;">
+    <thead style="text-align: left !important;">
         <th style="width: 25%;">Nome</th>
         <th>Descrição</th>
         <th style="width: 5%;text-align: center;">Tipo</th>
