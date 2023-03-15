@@ -1,3 +1,5 @@
+# General Laravel App Template
+
 ## Informações gerais
 ### Descrição
 {{ Informar a descrição detalhada da aplicação, resumindo seu propósito e suas principais características }}
@@ -30,13 +32,85 @@
 
 #### Entradas
 
-| Tipo       | Nome              | Descrição                                                            |     Tipo      | Obrigatório | Exemplo                                |
-|------------|:------------------|----------------------------------------------------------------------|:-------------:|:-----------:|----------------------------------------|
-| **Header** | **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string (Uuid) |     Sim     | _b72645e9-3bfb-4423-b983-0e7d47c425a5_ |
-| ^          | **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string (Uuid) |     Sim     | _b72645e9-3bfb-4423-b983-0e7d47c425a5_ |\
-| **Path**   | **id**            | Id do registro da coleção                                            | string (Uuid) |     Sim     | _f3269126-6861-40b4-98ce-5cfbca94aff1_ |
-| **Query**  | **filtro1**       | Filtro adicional para a ro                                           |    boolean    |     Não     | true                                   |
-| **Body**   | **description**   |                                                                      |               |             |                                        |
+<details><summary>Header</summary>
+<p>
+<table style="vertical-align: top;">
+    <thead>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Tipo</th>
+        <th>Obrigatório</th>
+        <th>Exemplo</th>
+    </thead>
+    <tbody>
+        <td>CorrelationId</td>
+        <td>Identificador único da requisição para reateamento de correlacionado</td>
+        <td>string (Uuid)</td>
+        <td>Sim</td>
+        <td><i>b72645e9-3bfb-4423-b983-0e7d47c425a5</i></td>
+    </tbody>
+</table>
+</details>
+
+<details><summary>Path</summary>
+<p>
+<table>
+    <thead>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Tipo</th>
+        <th>Obrigatório</th>
+        <th>Exemplo</th>
+    </thead>
+    <tbody>
+        <td>{id}</td>
+        <td>Id do registro da coleção</td>
+        <td>string (Uuid)</td>
+        <td>Sim</td>
+        <td><i>f3269126-6861-40b4-98ce-5cfbca94aff1</i></td>
+    </tbody>
+</table>
+</details>
+
+<details><summary>Query</summary>
+<p>
+<table>
+    <thead>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Tipo</th>
+        <th>Obrigatório</th>
+        <th>Exemplo</th>
+    </thead>
+    <tbody>
+        <td>filtro1</td>
+        <td>Filtro adicional para a rota</td>
+        <td>boolean</td>
+        <td>Não</td>
+        <td>true</td>
+    </tbody>
+</table>
+</details>
+
+<details><summary>Body</summary>
+<p>
+<table>
+    <thead>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Tipo</th>
+        <th>Obrigatório</th>
+        <th>Exemplo</th>
+    </thead>
+    <tbody>
+        <td>description</td>
+        <td>Descrição para o novo registro</td>
+        <td>string</td>
+        <td>Sim</td>
+        <td>**</td>
+    </tbody>
+</table>
+</details>
 
 #### Saídas
 
