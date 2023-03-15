@@ -29,29 +29,13 @@
 {{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes }}
 
 #### Entradas
-- **Header:**
-  
-| Nome              | Descrição                                                            |     Tipo      | Obrigatório | Exemplo                                |
-|:------------------|----------------------------------------------------------------------|:-------------:|:-----------:|----------------------------------------|
-| **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string (Uuid) |     Sim     | _b72645e9-3bfb-4423-b983-0e7d47c425a5_ |
 
-- **Path:**
-  
-| Nome   | Descrição                 | Tipo          | Obrigatório | Exemplo                                |
-|:-------|---------------------------|---------------|:-----------:|----------------------------------------|
-| **id** | Id do registro da coleção | string (Uuid) |     Sim     | _f3269126-6861-40b4-98ce-5cfbca94aff1_ |
-
-- **Query:**
-
-| Nome        | Descrição                    | Tipo    | Obrigatório | Exemplo |
-|:------------|------------------------------|---------|:-----------:|---------|
-| **filtro1** | Filtro adicional para a rora | boolean |     Sim     | true    |
-
-- **Body:**
-
-| Nome      | Descrição                    | Tipo    | Obrigatório | Exemplo |
-|:----------|------------------------------|---------|:-----------:|---------|
-| **corpo** | Filtro adicional para a rora | boolean |     Sim     | true    |
+| Tipo       | Nome              | Descrição                                                            |     Tipo      | Obrigatório | Exemplo                                |
+|------------|:------------------|----------------------------------------------------------------------|:-------------:|:-----------:|----------------------------------------|
+| **Header** | **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string (Uuid) |     Sim     | _b72645e9-3bfb-4423-b983-0e7d47c425a5_ |
+| **Path**   | **id**            | Id do registro da coleção                                            | string (Uuid) |     Sim     | _f3269126-6861-40b4-98ce-5cfbca94aff1_ |
+| **Query**  | **filtro1**       | Filtro adicional para a ro                                           |    boolean    |     Não     | true                                   |
+| **Body**   | **description**   |                                                                      |               |             |                                        |
 
 #### Saídas
 
