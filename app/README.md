@@ -34,12 +34,12 @@
 
 <details><summary>Header</summary>
 <table>
-    <thead style="text-align: left !important;">
-        <th style="width: 25%;">Nome</th>
-        <th>Descrição</th>
-        <th style="width: 5%;text-align: center;">Tipo</th>
-        <th style="width: 5%;text-align: center;">Obrigatório</th>
-        <th style="width: 25%;" class="th-example">Exemplo</th>
+    <thead>
+        <th style="width: 25%; text-align: left;">Nome</th>
+        <th style="text-align: left;">Descrição</th>
+        <th style="width: 5%;">Tipo</th>
+        <th style="width: 5%;">Obrigatório</th>
+        <th style="width: 25%; text-align: left;" class="th-example">Exemplo</th>
     </thead>
     <tbody style="vertical-align: top;">
         <tr>
