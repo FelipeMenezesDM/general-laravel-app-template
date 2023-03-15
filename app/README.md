@@ -32,82 +32,96 @@
 
 #### Entradas
 
+<style>
+.general-doc-table th{text-align: left;}
+.general-doc-table td{vertical-align: top;}
+.general-doc-table td.td-name{font-weight: bold;}
+.general-doc-table th.th-name{width:25%;}
+.general-doc-table th.th-type{width:5%;text-align: center;}
+.general-doc-table th.th-required{width:5%;text-align: center;}
+.general-doc-table th.th-example{width:25%;}
+</style>
+
 <details><summary>Header</summary>
-<p>
-<table style="vertical-align: top;">
+<table class="general-doc-table">
     <thead>
-        <th>Nome</th>
-        <th>Descrição</th>
-        <th>Tipo</th>
-        <th>Obrigatório</th>
-        <th>Exemplo</th>
+        <th class="th-name">Nome</th>
+        <th class="th-description">Descrição</th>
+        <th class="th-type">Tipo</th>
+        <th class="th-required">Obrigatório</th>
+        <th class="th-example">Exemplo</th>
     </thead>
     <tbody>
-        <td>CorrelationId</td>
-        <td>Identificador único da requisição para reateamento de correlacionado</td>
-        <td>string (Uuid)</td>
-        <td>Sim</td>
-        <td><i>b72645e9-3bfb-4423-b983-0e7d47c425a5</i></td>
+        <tr>
+            <td class="td-name">CorrelationId</td>
+            <td class="td-description">Identificador único da requisição para reateamento de correlacionado</td>
+            <td class="td-type">string (Uuid)</td>
+            <td class="td-required">Sim</td>
+            <td class="td-example"><i>b72645e9-3bfb-4423-b983-0e7d47c425a5</i></td>
+        </tr>
     </tbody>
 </table>
 </details>
 
 <details><summary>Path</summary>
-<p>
-<table>
+<table class="general-doc-table">
     <thead>
-        <th>Nome</th>
-        <th>Descrição</th>
-        <th>Tipo</th>
-        <th>Obrigatório</th>
-        <th>Exemplo</th>
+        <th class="th-name">Nome</th>
+        <th class="th-description">Descrição</th>
+        <th class="th-type">Tipo</th>
+        <th class="th-required">Obrigatório</th>
+        <th class="th-example">Exemplo</th>
     </thead>
     <tbody>
-        <td>{id}</td>
-        <td>Id do registro da coleção</td>
-        <td>string (Uuid)</td>
-        <td>Sim</td>
-        <td><i>f3269126-6861-40b4-98ce-5cfbca94aff1</i></td>
+        <tr>
+            <td class="td-name">id</td>
+            <td class="td-description">Id do registro da coleção</td>
+            <td class="td-type">string (Uuid)</td>
+            <td class="td-required">Sim</td>
+            <td class="td-example"><i>f3269126-6861-40b4-98ce-5cfbca94aff1</i></td>
+        </tr>
     </tbody>
 </table>
 </details>
 
 <details><summary>Query</summary>
-<p>
-<table>
+<table class="general-doc-table">
     <thead>
-        <th>Nome</th>
-        <th>Descrição</th>
-        <th>Tipo</th>
-        <th>Obrigatório</th>
-        <th>Exemplo</th>
+        <th class="th-name">Nome</th>
+        <th class="th-description">Descrição</th>
+        <th class="th-type">Tipo</th>
+        <th class="th-required">Obrigatório</th>
+        <th class="th-example">Exemplo</th>
     </thead>
     <tbody>
-        <td>filtro1</td>
-        <td>Filtro adicional para a rota</td>
-        <td>boolean</td>
-        <td>Não</td>
-        <td>true</td>
+        <tr>
+            <td class="td-name">filtro1</td>
+            <td class="td-description">Filtro adicional para a rota</td>
+            <td class="td-type">boolean</td>
+            <td class="td-required">Não</td>
+            <td class="td-example">true</td>
+        </tr>
     </tbody>
 </table>
 </details>
 
 <details><summary>Body</summary>
-<p>
-<table>
+<table class="general-doc-table">
     <thead>
-        <th>Nome</th>
-        <th>Descrição</th>
-        <th>Tipo</th>
-        <th>Obrigatório</th>
-        <th>Exemplo</th>
+        <th class="th-name">Nome</th>
+        <th class="th-description">Descrição</th>
+        <th class="th-type">Tipo</th>
+        <th class="th-required">Obrigatório</th>
+        <th class="th-example">Exemplo</th>
     </thead>
     <tbody>
-        <td>description</td>
-        <td>Descrição para o novo registro</td>
-        <td>string</td>
-        <td>Sim</td>
-        <td>**</td>
+        <tr>
+            <td class="td-name">description</td>
+            <td class="td-description">Descrição para o novo registro</td>
+            <td class="td-type">string</td>
+            <td class="td-required">Sim</td>
+            <td class="td-example">**</td>
+        </tr>
     </tbody>
 </table>
 </details>
