@@ -115,6 +115,7 @@
 #### Saídas
 <details open>
 <summary>200 OK</summary>
+
 ```json
 {
     "description": "Descrição do registro"
@@ -123,6 +124,7 @@
 </details>
 <details>
 <summary>200 NO CONTENT</summary>
+
 ```
 EMPTY
 ```
