@@ -92,8 +92,6 @@ EMPTY
 {{ Informar lista não numerada de todos os serviços externos ou internos utilizados pela aplicação }}
 
 ## Links úteis
-{{  Informar links adicionais, como outras documentações por exemplo, que auxiliem nos esclarecimentos sobre esta aplicação }}
-
 - [Instalação](../README.md)
 - [Testes integrados](../tests/README.md)
 - [Cadastro de massas](.)
