@@ -83,9 +83,9 @@ EMPTY
 ### $\textcolor{violet}{\textsf{• POST}}$/end-points/{id}
 ### $\textcolor{orange}{\textsf{• PUT}}$/end-points/{id}
 ### $\textcolor{gold}{\textsf{• PATCH}}$/end-points/{id}
-### $\textcolor{red}{\textsf{• DELETE}}$/end-points/{id}
+### $\textcolor{orangered}{\textsf{• DELETE}}$/end-points/{id}
 ### $\textcolor{cyan}{\textsf{• HEAD}}$/end-points/{id}
-### $\textcolor{grey}{\textsf{• OPTIONS}}$/end-points/{id}
+### $\textcolor{lightcoral}{\textsf{• OPTIONS}}$/end-points/{id}
 
 ## Integrações
 {{ Informar lista não numerada de todos os serviços externos ou internos utilizados pela aplicação }}
