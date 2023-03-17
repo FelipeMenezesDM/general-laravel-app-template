@@ -113,15 +113,19 @@
 </details>
 
 #### Saídas
-<details open><summary>200 OK</summary>
+<details open>
+<summary>200 OK</summary>
 ```json
 {
     "description": "Descrição do registro"
 }
 ```
 </details>
-<details open><summary>200 NO CONTENT</summary>
-    EMPTY
+<details>
+<summary>200 NO CONTENT</summary>
+```
+EMPTY
+```
 </details>
 
 ## Integrações
