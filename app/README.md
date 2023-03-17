@@ -19,11 +19,11 @@
 ## Contrato
 ### Composição
 
-| Ambiente | URL                                             |
-|----------|-------------------------------------------------|
-| DEV      | { Informar url do ambiente de desenvolvimento } |
-| HOM      | { Informar url do ambiente de homologação }     |
-| PROD     | { informar url do ambiente de produção }        |
+| Ambiente | URL                                               |
+|----------|---------------------------------------------------|
+| DEV      | {{ Informar url do ambiente de desenvolvimento }} |
+| HOM      | {{ Informar url do ambiente de homologação }}     |
+| PROD     | {{ informar url do ambiente de produção }}        |
 
 ### $\textcolor{violet}{\textsf{• POST}}$/end-points/{id}
 {{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes, removendo os que não são necessários }}
@@ -32,31 +32,34 @@
 <details>
 <summary>Header</summary>
 
-| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
-|:---------|:----------|:----:|:-----------:|:--------|
-| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
+| Nome           | Descrição       |    Tipo    |  Obrigatório  | Exemplo       |
+|:---------------|:----------------|:----------:|:-------------:|:--------------|
+| **{{ NOME }}** | {{ DESCRIÇÃO }} | {{ TIPO }} | {{ SIM/NÃO }} | {{ EXEMPLO }} |
 
 </details>
 <details>
 <summary>Path</summary>
 
-| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
-|:---------|:----------|:----:|:-----------:|:--------|
-| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
+| Nome           | Descrição       |    Tipo    |  Obrigatório  | Exemplo       |
+|:---------------|:----------------|:----------:|:-------------:|:--------------|
+| **{{ NOME }}** | {{ DESCRIÇÃO }} | {{ TIPO }} | {{ SIM/NÃO }} | {{ EXEMPLO }} |
+
 </details>
 <details>
 <summary>Query</summary>
 
-| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
-|:---------|:----------|:----:|:-----------:|:--------|
-| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
+| Nome           | Descrição       |    Tipo    |  Obrigatório  | Exemplo       |
+|:---------------|:----------------|:----------:|:-------------:|:--------------|
+| **{{ NOME }}** | {{ DESCRIÇÃO }} | {{ TIPO }} | {{ SIM/NÃO }} | {{ EXEMPLO }} |
+
 </details>
 <details>
 <summary>Body</summary>
 
-| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
-|:---------|:----------|:----:|:-----------:|:--------|
-| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
+| Nome           | Descrição       |    Tipo    |  Obrigatório  | Exemplo       |
+|:---------------|:----------------|:----------:|:-------------:|:--------------|
+| **{{ NOME }}** | {{ DESCRIÇÃO }} | {{ TIPO }} | {{ SIM/NÃO }} | {{ EXEMPLO }} |
+
 </details>
 
 #### Saídas
