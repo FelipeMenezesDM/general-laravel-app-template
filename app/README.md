@@ -27,7 +27,7 @@
 
 {{ Informar todos os endpoints disponíveis nesta aplicação, de acordo com o modelo abaixo }}
 
-### POST • /end-points/{id}
+### $\textcolor{blue}{\textsf{POST}}$ • /end-points/{id}
 {{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes, removendo os que não são necessários }}
 
 #### Entradas
@@ -116,8 +116,6 @@
 <details open>
 <summary>200 OK</summary>
 
-\color{red}Red
-
 ```json
 {
     "description": "Descrição do registro"
@@ -131,6 +129,12 @@
 EMPTY
 ```
 </details>
+
+### $\textcolor{blue}{\textsf{GET}}$ • /end-points/{id}
+### $\textcolor{purple}{\textsf{POST}}$ • /end-points/{id}
+### $\textcolor{orange}{\textsf{PUT}}$ • /end-points/{id}
+### $\textcolor{grey}{\textsf{PATCH}}$ • /end-points/{id}
+### $\textcolor{red}{\textsf{DELETE}}$ • /end-points/{id}
 
 ## Integrações
 {{ Informar lista não numerada de todos os serviços externos ou internos utilizados pela aplicação }}
