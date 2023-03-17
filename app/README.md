@@ -116,7 +116,7 @@
 <details open>
 <summary>200 OK</summary>
 
-\color{red}Red}
+\color{red}Red
 
 ```json
 {
