@@ -20,7 +20,7 @@
 ### Composição
 
 | Ambiente | URL                                               |
-|----------|---------------------------------------------------|
+|:---------|:--------------------------------------------------|
 | DEV      | {{ Informar url do ambiente de desenvolvimento }} |
 | HOM      | {{ Informar url do ambiente de homologação }}     |
 | PROD     | {{ informar url do ambiente de produção }}        |
