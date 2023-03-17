@@ -116,6 +116,8 @@
 <details open>
 <summary>200 OK</summary>
 
+$${\color{red}Red}$$
+
 ```json
 {
     "description": "Descrição do registro"
