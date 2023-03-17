@@ -29,7 +29,7 @@
 {{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes, removendo os que não são necessários }}
 
 #### Entradas
-<details open>
+<details>
 <summary>Header</summary>
 
 | Nome     | Descrição | Tipo | Obrigatório | Exemplo |
