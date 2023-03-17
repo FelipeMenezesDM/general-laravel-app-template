@@ -62,7 +62,7 @@
 </details>
 
 #### Saídas
-<details open>
+<details>
 <summary>200 OK</summary>
 
 ```json
@@ -79,11 +79,11 @@ EMPTY
 ```
 </details>
 
-### $\textcolor{blue}{\textsf{GET}}$ • /end-points/{id}
-### $\textcolor{purple}{\textsf{POST}}$ • /end-points/{id}
-### $\textcolor{orange}{\textsf{PUT}}$ • /end-points/{id}
-### $\textcolor{grey}{\textsf{PATCH}}$ • /end-points/{id}
-### $\textcolor{red}{\textsf{DELETE}}$ • /end-points/{id}
+### $\textcolor{blue}{\textsf{GET •}}$ /end-points/{id}
+### $\textcolor{purple}{\textsf{POST •}}$ /end-points/{id}
+### $\textcolor{orange}{\textsf{PUT •}}$ /end-points/{id}
+### $\textcolor{grey}{\textsf{PATCH •}}$ /end-points/{id}
+### $\textcolor{red}{\textsf{DELETE •}}$ /end-points/{id}
 
 ## Integrações
 {{ Informar lista não numerada de todos os serviços externos ou internos utilizados pela aplicação }}
