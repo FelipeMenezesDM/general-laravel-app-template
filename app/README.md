@@ -34,73 +34,31 @@
 <details open>
 <summary>Header</summary>
 
-| Nome              | Descrição                                                            |  Tipo  | Obrigatório | Exemplo                                |
-|:------------------|:---------------------------------------------------------------------|:------:|:-----------:|:---------------------------------------|
-| **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string |     [x]     | *b72645e9-3bfb-4423-b983-0e7d47c425a5* |
+| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
+|:---------|:----------|:----:|:-----------:|:--------|
+| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
 
 </details>
 <details>
 <summary>Path</summary>
-<table>
-    <thead align="left">
-        <th width="25%">Nome</th>
-        <th>Descrição</th>
-        <th width="5%">Tipo</th>
-        <th width="5%">Obrigatório</th>
-        <th width="25%">Exemplo</th>
-    </thead>
-    <tbody valign="top" align="left">
-        <tr>
-            <td><b>id</b></td>
-            <td>Id do registro da coleção</td>
-            <td align="center">string (Uuid)</td>
-            <td align="center">Sim</td>
-            <td><i>f3269126-6861-40b4-98ce-5cfbca94aff1</i></td>
-        </tr>
-    </tbody>
-</table>
+
+| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
+|:---------|:----------|:----:|:-----------:|:--------|
+| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
 </details>
 <details>
 <summary>Query</summary>
-<table>
-    <thead align="left">
-        <th width="25%">Nome</th>
-        <th>Descrição</th>
-        <th width="5%">Tipo</th>
-        <th width="5%">Obrigatório</th>
-        <th width="25%">Exemplo</th>
-    </thead>
-    <tbody valign="top" align="left">
-        <tr>
-            <td><b>filtro1</b></td>
-            <td>Filtro adicional para a rota</td>
-            <td align="center">boolean</td>
-            <td align="center">Não</td>
-            <td>true</td>
-        </tr>
-    </tbody>
-</table>
+
+| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
+|:---------|:----------|:----:|:-----------:|:--------|
+| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
 </details>
 <details>
 <summary>Body</summary>
-<table>
-    <thead align="left">
-        <th width="25%">Nome</th>
-        <th>Descrição</th>
-        <th width="5%">Tipo</th>
-        <th width="5%">Obrigatório</th>
-        <th width="25%">Exemplo</th>
-    </thead>
-    <tbody valign="top" align="left">
-        <tr>
-            <td><b>description</b></td>
-            <td>Descrição para o novo registro</td>
-            <td align="center">string</td>
-            <td align="center">Sim</td>
-            <td>***</td>
-        </tr>
-    </tbody>
-</table>
+
+| Nome     | Descrição | Tipo | Obrigatório | Exemplo |
+|:---------|:----------|:----:|:-----------:|:--------|
+| **NOME** | DESCRIÇÃO | TIPO |   SIM/NÃO   | EXEMPLO |
 </details>
 
 #### Saídas
