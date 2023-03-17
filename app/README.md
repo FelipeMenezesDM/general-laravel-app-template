@@ -27,31 +27,20 @@
 
 {{ Informar todos os endpoints disponíveis nesta aplicação, de acordo com o modelo abaixo }}
 
-### $\textcolor{blue}{\textsf{POST}}$ • /end-points/{id}
+### $\textcolor{purple}{\textsf{POST}}$ • /end-points/{id}
 {{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes, removendo os que não são necessários }}
 
 #### Entradas
-<details><summary>Header</summary>
-<table>
-    <thead align="left">
-        <th width="25%">Nome</th>
-        <th>Descrição</th>
-        <th width="5%">Tipo</th>
-        <th width="5%">Obrigatório</th>
-        <th width="25%">Exemplo</th>
-    </thead>
-    <tbody valign="top" align="left">
-        <tr>
-            <td><b>CorrelationId</b></td>
-            <td>Identificador único da requisição para reateamento de correlacionado</td>
-            <td align="center">string (Uuid)</td>
-            <td align="center">Sim</td>
-            <td><i>b72645e9-3bfb-4423-b983-0e7d47c425a5</i></td>
-        </tr>
-    </tbody>
-</table>
+<details open>
+<summary>Header</summary>
+
+| Nome              | Descrição                                                            |  Tipo  | Obrigatório | Exemplo                                |
+|:------------------|:---------------------------------------------------------------------|:------:|:-----------:|:---------------------------------------|
+| **CorrelationId** | Identificador único da requisição para reateamento de correlacionado | string |     [x]     | *b72645e9-3bfb-4423-b983-0e7d47c425a5* |
+
 </details>
-<details><summary>Path</summary>
+<details>
+<summary>Path</summary>
 <table>
     <thead align="left">
         <th width="25%">Nome</th>
@@ -71,7 +60,8 @@
     </tbody>
 </table>
 </details>
-<details><summary>Query</summary>
+<details>
+<summary>Query</summary>
 <table>
     <thead align="left">
         <th width="25%">Nome</th>
@@ -91,7 +81,8 @@
     </tbody>
 </table>
 </details>
-<details><summary>Body</summary>
+<details>
+<summary>Body</summary>
 <table>
     <thead align="left">
         <th width="25%">Nome</th>
