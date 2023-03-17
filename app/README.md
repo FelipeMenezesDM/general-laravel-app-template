@@ -25,8 +25,6 @@
 | HOM      | { Informar url do ambiente de homologação }     |
 | PROD     | { informar url do ambiente de produção }        |
 
-{{ Informar todos os endpoints disponíveis nesta aplicação, de acordo com o modelo abaixo }}
-
 ### $\textcolor{violet}{\textsf{• POST}}$/end-points/{id}
 {{ Informar breve descrição do endpoint e suas entradas e saídas correspondentes, removendo os que não são necessários }}
 
