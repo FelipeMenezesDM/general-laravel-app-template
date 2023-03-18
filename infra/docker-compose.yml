@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  php:
+    tty: true
+    build:
+      context: ../
+      dockerfile: app.dockerfile
+      args:
+        - PORT=${PORT}
+        - APP_ENV=local
+        - XDEBUG_MODE=coverage,debug
+    restart: always
+    container_name: general_laravel_app_template
+    ports:
+      - "${PORT}:${PORT}"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ../app:/home/app
+    networks:
+      - main_network
+networks:
+  main_network:
+    driver: bridge

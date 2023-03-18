@@ -1,0 +1,26 @@
+description: Application settings
+version: 1.0.0
+service_account: application
+settings:
+  port: 1080
+  region: us-central1
+  scaling:
+    concurrency: 80
+    min-instances: 0
+    max-instances: 4
+    timeout: 180
+    memory: 128Mi
+    cpu: 1
+  enable-ssl: true
+  ingress: all
+  cpu-throttling: true
+  execution-environment: gen1
+  instances: []
+command:
+  entrypoint:
+  args:
+test:
+  disable:
+    unit: false
+    mutation: false
+    integration: false
