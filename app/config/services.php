@@ -31,4 +31,19 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'aws' => [
+        'account_id' => env('AWS_ACCOUNT_ID'),
+        'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+        'endpoint' => env('AWS_ENDPOINT'),
+    ],
+
+    'gcp' => [
+        'project_id' => env('GCP_PROJECT_ID'),
+        'recaptcha' => [
+            'public_key' => fromSecret(getenv('RECAPTCHA_SITE_KEY')),
+            'private_key' => fromSecret(getenv('RECAPTCHA_SECRET_KEY')),
+            'minimum_score' => 0.6,
+        ],
+    ],
+
 ];

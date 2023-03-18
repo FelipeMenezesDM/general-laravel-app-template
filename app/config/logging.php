@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => env('LOG_CHANNEL', 'stack'),
+    'default' => env('APP_LOG_CHANNEL', 'stack'),
 
     /*
     |--------------------------------------------------------------------------
@@ -117,6 +117,18 @@ return [
 
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
+        ],
+
+        'gcp' => [
+            'driver' => 'custom',
+            'via' => \FelipeMenezesDM\LaravelLoggerAdapter\Loggers\GCPLogger::class,
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
+
+        'aws' => [
+            'driver' => 'custom',
+            'via' => \FelipeMenezesDM\LaravelLoggerAdapter\Loggers\AWSLogger::class,
+            'level' => env('LOG_LEVEL', 'debug'),
         ],
     ],
 
