@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +22,40 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $this->enableSSL();
+        $this->appSetLocale();
+        $this->schemaSetDefaultStringLength();
+    }
+
+    /**
+     * Set global location for application
+     *
+     * @return void
+     */
+    private function appSetLocale() : void
+    {
+        App::setLocale(config('app.locale'));
+    }
+
+    /**
+     * Set default string length for schema
+     *
+     * @return void
+     */
+    private function schemaSetDefaultStringLength() : void
+    {
+        Schema::defaultStringLength(150);
+    }
+
+    /**
+     * Enable SSL
+     *
+     * @return void
+     */
+    private function enableSSL() : void
+    {
+        if(env('ENABLE_SSL', false)) {
+            URL::forceScheme('https');
+        }
     }
 }
