@@ -23,19 +23,20 @@ ENV XDEBUG_CONFIG="discover_client_host=false client_host=host.docker.internal"
 
 # Copy project
 COPY ./app .
-COPY ./infra/nginx.conf /etc/nginx/nginx.conf
+COPY ./infra/*.conf /etc/nginx/
 COPY ./infra/startup.sh /etc/nginx/startup.sh
 
 # Install application
 RUN if [ "${APP_ENV}" != "local" ]; then \
-    composer install --no-dev; fi
+    pecl install swoole && \
+    docker-php-ext-enable swoole && \
+    composer install --no-dev && \
+    RUN chown -R www-data: .; fi
 
 # Install xDebug
 RUN if [ "${APP_ENV}" != "prod" ]; then \
     apk add linux-headers $PHPIZE_DEPS && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug; fi
-
-RUN chown -R www-data: .;
 
 CMD sh /etc/nginx/startup.sh
