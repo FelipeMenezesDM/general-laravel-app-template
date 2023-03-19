@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2595c0ac01363a9546c9a586052be19",
+    "content-hash": "680ec5c3ff23d15ba98970e200a0c077",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -582,12 +582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FelipeMenezesDM/laravel-commons.git",
-                "reference": "fc019b11b6c2d26612fb4cd687e75b67184637e8"
+                "reference": "842228418e748d96c6bca2f37e159b33e02a4d57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FelipeMenezesDM/laravel-commons/zipball/fc019b11b6c2d26612fb4cd687e75b67184637e8",
-                "reference": "fc019b11b6c2d26612fb4cd687e75b67184637e8",
+                "url": "https://api.github.com/repos/FelipeMenezesDM/laravel-commons/zipball/842228418e748d96c6bca2f37e159b33e02a4d57",
+                "reference": "842228418e748d96c6bca2f37e159b33e02a4d57",
                 "shasum": ""
             },
             "require": {
@@ -595,6 +595,9 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/Helpers/helpers.php"
+                ],
                 "psr-4": {
                     "FelipeMenezesDM\\LaravelCommons\\": "src/"
                 }
@@ -611,7 +614,7 @@
                 "issues": "https://github.com/FelipeMenezesDM/laravel-commons/issues",
                 "source": "https://github.com/FelipeMenezesDM/laravel-commons/tree/v1.0.0"
             },
-            "time": "2022-12-11T08:22:52+00:00"
+            "time": "2023-03-19T02:04:17+00:00"
         },
         {
             "name": "felipemenezesdm/laravel-logger-adapter",
@@ -619,12 +622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FelipeMenezesDM/laravel-logger-adapter.git",
-                "reference": "bdb68ab496f705973b07771d3ed7428ba45c4401"
+                "reference": "11af768b88636a70ede9b2fd6d5961ba076d37f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FelipeMenezesDM/laravel-logger-adapter/zipball/bdb68ab496f705973b07771d3ed7428ba45c4401",
-                "reference": "bdb68ab496f705973b07771d3ed7428ba45c4401",
+                "url": "https://api.github.com/repos/FelipeMenezesDM/laravel-logger-adapter/zipball/11af768b88636a70ede9b2fd6d5961ba076d37f2",
+                "reference": "11af768b88636a70ede9b2fd6d5961ba076d37f2",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +656,7 @@
                 "issues": "https://github.com/FelipeMenezesDM/laravel-logger-adapter/issues",
                 "source": "https://github.com/FelipeMenezesDM/laravel-logger-adapter/tree/v1.0.0"
             },
-            "time": "2023-03-18T19:54:19+00:00"
+            "time": "2023-03-19T07:01:18+00:00"
         },
         {
             "name": "felipemenezesdm/laravel-secret-manager-suite",

@@ -7,10 +7,10 @@ ARG XDEBUG_MODE
 WORKDIR /home/app
 
 # Install PHP extensions dependencies
-RUN apk update && apk upgrade && apk add nginx musl git curl oniguruma-dev zlib-dev libpng-dev zip memcached
+RUN apk add nginx musl curl oniguruma-dev zlib-dev libpng-dev zip memcached
 
 # Install PHP extensions
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd sockets opcache
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd sockets
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
@@ -24,12 +24,11 @@ ENV XDEBUG_CONFIG="discover_client_host=false client_host=host.docker.internal"
 # Copy project
 COPY ./app .
 COPY ./infra/nginx.conf /etc/nginx/nginx.conf
+COPY ./infra/startup.sh /etc/nginx/startup.sh
 
 # Install application
 RUN if [ "${APP_ENV}" != "local" ]; then \
-    composer install --no-dev && \
-    php artisan passport:keys --force && \
-    chown -R www-data: .; fi
+    composer install --no-dev; fi
 
 # Install xDebug
 RUN if [ "${APP_ENV}" != "prod" ]; then \
@@ -37,4 +36,6 @@ RUN if [ "${APP_ENV}" != "prod" ]; then \
     pecl install xdebug && \
     docker-php-ext-enable xdebug; fi
 
-CMD sh ./infra/startup.sh
+RUN chown -R www-data: .;
+
+CMD sh /etc/nginx/startup.sh
