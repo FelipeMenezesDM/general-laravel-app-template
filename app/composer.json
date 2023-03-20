@@ -61,11 +61,7 @@
         ],
         "test-unit": [
             "Composer\\Config::disableProcessTimeout",
-            "./vendor/bin/phpunit --testsuite Unit --coverage-html ./reports"
-        ],
-        "test-feature": [
-            "Composer\\Config::disableProcessTimeout",
-            "./vendor/bin/phpunit --testsuite Feature --coverage-html ./reports"
+            "./vendor/bin/phpunit --testsuite Unit"
         ]
     },
     "extra": {
