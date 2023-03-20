@@ -65,7 +65,7 @@
         ],
         "test-mutation": [
             "Composer\\Config::disableProcessTimeout",
-            "/root/.composer/vendor/bin/infection"
+            "infection --threads=4"
         ]
     },
     "extra": {

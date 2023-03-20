@@ -33,9 +33,11 @@ RUN if [ "${APP_ENV}" != "local" ]; then \
     composer install --no-dev && \
     chown -R www-data: .; fi
 
-# Install xDebug
+# Install xDebug and Infection
 RUN if [ "${APP_ENV}" != "prod" ]; then \
-    composer global require infection/infection && \
+    curl -sSL -O https://github.com/infection/infection/releases/download/0.26.19/infection.phar && \
+    chmod a+x infection.phar && \
+    mv infection.phar /usr/local/bin/infection && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug; fi
 
