@@ -1,0 +1,7 @@
+default:
+  suites:
+    default:
+      paths:
+        - '%paths.base%/src/Features'
+      contexts:
+        - 'Src\Steps\Common'

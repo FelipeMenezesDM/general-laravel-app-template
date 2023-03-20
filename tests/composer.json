@@ -1,0 +1,15 @@
+{
+    "name": "felipemenezesdm/general-laravel-app-template-tests",
+    "description": "Pacote de testes integrados para o Template Geral de Aplicações Laravel",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "behat/behat": "^3.12"
+    }
+}
