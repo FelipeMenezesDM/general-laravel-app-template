@@ -65,7 +65,7 @@
         ],
         "test-mutation": [
             "Composer\\Config::disableProcessTimeout",
-            "./vendor/bin/infection"
+            "/root/.composer/vendor/bin/infection"
         ]
     },
     "extra": {
@@ -79,7 +79,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "infection/extension-installer": true
         }
     },
     "minimum-stability": "dev",

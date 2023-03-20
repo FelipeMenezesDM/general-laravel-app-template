@@ -35,6 +35,7 @@ RUN if [ "${APP_ENV}" != "local" ]; then \
 
 # Install xDebug
 RUN if [ "${APP_ENV}" != "prod" ]; then \
+    composer global require infection/infection && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug; fi
 
