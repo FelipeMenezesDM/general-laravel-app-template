@@ -7,7 +7,7 @@ ARG XDEBUG_MODE
 WORKDIR /home/app
 
 # Install PHP extensions dependencies
-RUN apk add nginx musl curl oniguruma-dev zlib-dev libpng-dev zip memcached
+RUN apk add nginx musl curl oniguruma-dev zlib-dev libpng-dev zip memcached linux-headers $PHPIZE_DEPS
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd sockets
@@ -31,11 +31,10 @@ RUN if [ "${APP_ENV}" != "local" ]; then \
     pecl install swoole && \
     docker-php-ext-enable swoole && \
     composer install --no-dev && \
-    RUN chown -R www-data: .; fi
+    chown -R www-data: .; fi
 
 # Install xDebug
 RUN if [ "${APP_ENV}" != "prod" ]; then \
-    apk add linux-headers $PHPIZE_DEPS && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug; fi
 
