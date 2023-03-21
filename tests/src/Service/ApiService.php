@@ -5,9 +5,25 @@ namespace Src\Service;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
+use Src\Props\Props;
 
 class ApiService
 {
+    private static ApiService|null $instance = null;
+    private static string|null $apiUrl = null;
+    private static string|null $correlationId = null;
+
+    public static function getInstance() : ApiService
+    {
+        if(is_null(self::$instance)) {
+            self::$apiUrl = Props::getProperty('api.url');
+            self::$correlationId = Props::getProperty('api.correlation-id');
+            self::$instance = new static;
+        }
+
+        return self::$instance;
+    }
+
     public function get(string $uri, array|null $headers, array|null $variables) : ResponseInterface
     {
         return $this->sendRequest('GET', $uri, null, $headers, $variables);
@@ -38,7 +54,7 @@ class ApiService
      */
     private function sendRequest(string $method, string $uri, array|null $body, array|null $headers, array|null $variables) : ResponseInterface
     {
-        return (new Client())->request($method, $this->handleUrl($uri, $variables), [
+        return (new Client())->request($method, $this->handleUrl(self::$apiUrl . $uri, $variables), [
             'json'      => $body ?? [],
             'headers'   => $this->handleHeaders($headers),
         ]);
@@ -53,7 +69,7 @@ class ApiService
         }
 
         if(array_key_exists('CorrelationId', $headers)) {
-            $headers['CorrelationId'] = '';
+            $headers['CorrelationId'] = self::$correlationId;
         }
 
         return $headers;
