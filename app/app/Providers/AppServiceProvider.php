@@ -25,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
         $this->enableSSL();
         $this->appSetLocale();
         $this->schemaSetDefaultStringLength();
+        $this->requestSetDefaultAcceptContent();
     }
 
     /**
@@ -45,6 +46,16 @@ class AppServiceProvider extends ServiceProvider
     private function schemaSetDefaultStringLength() : void
     {
         Schema::defaultStringLength(150);
+    }
+
+    /**
+     * Set global header for all request
+     *
+     * @return void
+     */
+    private function requestSetDefaultAcceptContent() : void
+    {
+        request()->headers->set('Accept', 'application/json');
     }
 
     /**
