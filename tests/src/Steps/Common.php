@@ -3,6 +3,7 @@
 namespace Src\Steps;
 
 use Behat\Behat\Context\Context;
+use Src\Service\ApiService;
 
 class Common implements Context
 {

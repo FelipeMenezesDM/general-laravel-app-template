@@ -10,6 +10,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "behat/behat": "^3.12"
+        "behat/behat": "^3.12",
+        "guzzlehttp/guzzle": "^7.0"
     }
 }
