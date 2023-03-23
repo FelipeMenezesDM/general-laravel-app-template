@@ -1,4 +1,8 @@
 default:
+  formatters:
+    pretty: true
+    junit:
+      output_path: '%paths.base%/reports/integration'
   suites:
     default:
       paths:
