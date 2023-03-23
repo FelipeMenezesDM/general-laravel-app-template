@@ -16,7 +16,7 @@ class Common implements Context
      */
     public function que_uma_requisicao_foi_realizada_para_o_endpoint_de_health_check_da_aplicacao() : void
     {
-        $this->response = ApiService::getInstance()->get('/heal-check', null, null);
+        $this->response = ApiService::getInstance()->get('/health-check', null, null);
     }
 
     /**
