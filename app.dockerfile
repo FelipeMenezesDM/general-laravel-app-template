@@ -41,4 +41,6 @@ RUN if [ "${APP_ENV}" != "prod" ]; then \
     pecl install xdebug && \
     docker-php-ext-enable xdebug; fi
 
+HEALTHCHECK --interval=4m --retries=3 --timeout=8s CMD curl -f http://localhost:${PORT}/api/v1/health-check || exit 1
+
 CMD sh /etc/nginx/startup.sh
