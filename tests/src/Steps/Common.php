@@ -20,10 +20,11 @@ class Common implements Context
     }
 
     /**
+     * @test
      * @Then confirmar retorno de status http 200
      */
     public function confirmar_retorno_de_status_http_200() : void
     {
-        Assert::assertEquals(404, $this->response->getStatusCode());
+        Assert::assertEquals(200, $this->response->getStatusCode());
     }
 }

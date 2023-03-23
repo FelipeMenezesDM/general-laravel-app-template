@@ -3,6 +3,7 @@
 namespace Src\Service;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Http\Message\ResponseInterface;
 use Src\Props\Props;
@@ -54,10 +55,14 @@ class ApiService
      */
     private function sendRequest(string $method, string $uri, array|null $body, array|null $headers, array|null $variables) : ResponseInterface
     {
-        return (new Client())->request($method, $this->handleUrl(self::$apiUrl . $uri, $variables), [
-            'json'      => $body ?? [],
-            'headers'   => $this->handleHeaders($headers),
-        ]);
+        try {
+            return (new Client())->request($method, $this->handleUrl(self::$apiUrl . $uri, $variables), [
+                'json'      => $body ?? [],
+                'headers'   => $this->handleHeaders($headers),
+            ]);
+        }catch(ClientException $e) {
+            return $e->getResponse();
+        }
     }
 
     private function handleHeaders(array|null $headers) : array
