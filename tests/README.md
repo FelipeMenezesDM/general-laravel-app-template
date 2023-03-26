@@ -8,7 +8,7 @@ Vale ressaltar que, para que os testes sejam executados corretamente, a aplicaç
 [Confira na documentação da aplicação como inicializá-la.](../README.md)
 
 # Execução
-> ** Warning **
+> **Warning**
 >
 > Para execução dos testes integrados, é necessário ter executado a instalação da aplicação com o Docker.
 

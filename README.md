@@ -80,6 +80,8 @@ Para a instalação em ambiente local desta aplicação usando Docker, você dev
 #### Debug com Docker
 1. Acesse **File > Settings > PHP > Servers** e adicione um novo servidor com as seguintes configurações:<br>
    ![](./assets/phpstorm-debug-docker.png)<br>
+   > **Note**
+   > 
    > É importante não esquecer de mapear corretamente o diretório _/app_ para _/home/app_
 2. Inicie o listener do PHPStorm:<br>
    ![](./assets/phpstorm-debug-start.png)
@@ -97,19 +99,17 @@ Por ser uma aplicação Laravel, suas configurações podem ser alteradas direta
     - [Testes integrados](#testes-integrados)
 
 ### Testes unitários e mutantes
-Os testes unitários deste projeto podem ser executados usando diretamente o comando do Composer:
-```
-composer run test-unit
-```
+> **Warning**
+> 
+> Para execução dos testes unitários e mutantes, é necessário ter executado a instalação da aplicação com o Docker.
 
-Para executar apenas os testes mutantes e gerar o relatório de cobertura, execute o comando abaixo:
-```
-composer run test-mutation
-```
-
-No docker, os comandos de teste podem ser executados da seguinte forma:
+Para executar os testes unitários, execute o comando:
 ```
 docker exec -it general_laravel_app_template sh -c "composer run test-unit"
+```
+
+Para executar os testes mutantes, execute o comando:
+```
 docker exec -it general_laravel_app_template sh -c "composer run test-mutation"
 ```
 
