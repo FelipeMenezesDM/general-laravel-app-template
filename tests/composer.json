@@ -7,6 +7,12 @@
             "Src\\": "src/"
         }
     },
+    "scripts": {
+        "test-integration": [
+            "Composer\\Config::disableProcessTimeout",
+            "./vendor/bin/behat"
+        ]
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {

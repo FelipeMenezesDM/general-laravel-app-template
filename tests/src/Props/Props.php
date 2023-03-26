@@ -11,7 +11,7 @@ class Props
     private static function init() : void
     {
         if(is_null(self::$properties)) {
-            self::$properties = Yaml::parseFile('behat-config.yml');
+            self::$properties = Yaml::parseFile('properties.yml');
         }
     }
 
