@@ -3,6 +3,7 @@ USER root
 ARG APP_ENV
 ARG PORT
 ARG XDEBUG_MODE
+ARG XDEBUG_SESSION
 
 WORKDIR /home/app
 
@@ -19,6 +20,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -
 ENV PORT=$PORT
 ENV APP_ENV=$APP_ENV
 ENV XDEBUG_MODE=$XDEBUG_MODE
+ENV XDEBUG_SESSION=$XDEBUG_SESSION
 ENV XDEBUG_CONFIG="discover_client_host=false client_host=host.docker.internal"
 
 # Copy project

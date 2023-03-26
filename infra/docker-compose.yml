@@ -9,6 +9,7 @@ services:
         - PORT=${PORT}
         - APP_ENV=local
         - XDEBUG_MODE=coverage,debug
+        - XDEBUG_SESSION=auto
     restart: always
     container_name: general_laravel_app_template
     ports:
