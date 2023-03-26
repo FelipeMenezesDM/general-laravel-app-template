@@ -47,7 +47,7 @@ Para a instalação desta aplicação em ambiente local, é necessário ter inst
    ```
 5. Na pasta raíz do projeto, execute o comando abaixo para baixar as dependências da aplicação via Composer:
    ```
-   composer install
+   composer install -p ./app
    ```
 6. Abra o arquivo `.env` gerado na pasta _/app_ e configure as variáveis de ambiente conforme necessário.
 7. Após isso, as chamadas dos endpoints podem ser realizadas para a URL local: [``http://localhost/general-laravel-app-template/app/public/api/v1``](http://localhost/general-laravel-app-template/app/public/api/v1)
@@ -70,11 +70,11 @@ Para a instalação em ambiente local desta aplicação usando Docker, você dev
    ```
    PORT=1080 docker compose -f ./infra/docker-compose.yml up -d
    ```
-4. Execute o comando abaixo para realizar a instalação da aplicação no container gerado:
+4. Abra o arquivo `.env` gerado na pasta _/app_ do projeto e configure as variáveis de ambiente conforme necessário.
+5. Execute o comando abaixo para realizar a instalação da aplicação no container gerado:
    ```
    docker exec -it general_laravel_app_template sh -c "composer install && chown -R www-data: ."
    ```
-5. Abra o arquivo `.env` gerado na pasta _/app_ do projeto e configure as variáveis de ambiente conforme necessário.
 6. Após isso, as chamadas dos endpoints podem ser realizadas para a URL local: [``http://localhost:1080/api/v1``](http://localhost:1080/api/v1).
 
 #### Debug com Docker
