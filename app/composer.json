@@ -18,7 +18,8 @@
         "laravel/framework": "^10.0",
         "laravel/octane": "^1.5",
         "laravel/sanctum": "^3.2",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "spatie/laravel-health": "^1.22"
     },
     "require-dev": {
         "donatj/mock-webserver": "*",
@@ -53,15 +54,19 @@
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('./environments/' . strtoupper(${APP_ENV:-local}) . '.env', '.env'); echo 'Environment: ${APP_ENV:-local}' . PHP_EOL;\""
+        "pre-install-cmd": [
+            "@php -r 'file_exists(\".env\") || copy(\"./environments/\" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . \".env\", \".env\"); echo \"Environment: \" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . PHP_EOL;'"
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
         "test-unit": [
             "Composer\\Config::disableProcessTimeout",
-            "./vendor/bin/phpunit --testsuite Unit"
+            "./vendor/bin/phpunit"
+        ],
+        "test-mutation": [
+            "Composer\\Config::disableProcessTimeout",
+            "infection --threads=4"
         ]
     },
     "extra": {
@@ -75,7 +80,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "infection/extension-installer": true
         }
     },
     "minimum-stability": "dev",

@@ -1,0 +1,37 @@
+{
+    "$schema": "https://raw.githubusercontent.com/infection/infection/0.26.19/resources/schema.json",
+    "source": {
+        "directories": [
+            "app"
+        ],
+        "excludes": [
+            "Console",
+            "Exceptions",
+            "Http/Controllers/Controller.php",
+            "Http/Middleware/Authenticate.php",
+            "Http/Middleware/EncryptCookies.php",
+            "Http/Middleware/PreventRequestsDuringMaintenance.php",
+            "Http/Middleware/RedirectIfAuthenticated.php",
+            "Http/Middleware/TrimStrings.php",
+            "Http/Middleware/TrustHosts.php",
+            "Http/Middleware/TrustProxies.php",
+            "Http/Middleware/ValidateSignature.php",
+            "Http/Middleware/VerifyCsrfToken.php",
+            "Http/Kernel.php",
+            "Providers/AppServiceProvider.php",
+            "Providers/AuthServiceProvider.php",
+            "Providers/BroadcastServiceProvider.php",
+            "Providers/EventServiceProvider.php",
+            "Providers/RouteServiceProvider.php"
+        ]
+    },
+    "logs": {
+        "html": "./reports/mutation/infection.html",
+        "json": "./reports/mutation/infection.json"
+    },
+    "tmpDir": "./reports",
+    "mutators": {
+        "@default": true
+    },
+    "ignoreMsiWithNoMutations": true
+}

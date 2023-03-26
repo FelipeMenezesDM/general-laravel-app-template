@@ -84,6 +84,8 @@ class Handler extends ExceptionHandler
                     'trace'     => method_exists($class, 'getTrace') ? $throwable->getTrace() : []
                 ])
                 ->setCodeLine(basename($throwable->getFile()) . ": " . $throwable->getLine()));
+
+            return response()->json($payload, $payload['status']);
         });
     }
 }

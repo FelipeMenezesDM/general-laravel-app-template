@@ -4,15 +4,13 @@
          bootstrap="vendor/autoload.php"
          colors="true"
 >
-    <testsuites>
-        <testsuite name="Unit">
-            <directory suffix="Test.php">./tests/Unit</directory>
-        </testsuite>
-    </testsuites>
+    <testsuite name="Tests">
+        <directory>./tests</directory>
+    </testsuite>
     <coverage>
         <report>
-            <html outputDirectory="./reports" />
-            <xml outputDirectory="./reports" />
+            <html outputDirectory="./reports/unit" />
+            <xml outputDirectory="./reports/unit" />
         </report>
         <include>
             <directory suffix=".php">./app</directory>

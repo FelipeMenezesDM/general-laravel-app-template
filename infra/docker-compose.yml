@@ -9,6 +9,7 @@ services:
         - PORT=${PORT}
         - APP_ENV=local
         - XDEBUG_MODE=coverage,debug
+        - XDEBUG_SESSION=auto
     restart: always
     container_name: general_laravel_app_template
     ports:
@@ -16,7 +17,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
-      - ../app:/home/app
+      - ../:/home
     networks:
       - main_network
 networks:
