@@ -79,10 +79,7 @@ Para a instalação em ambiente local desta aplicação usando Docker, você dev
 
 #### Debug com Docker
 1. Acesse **File > Settings > PHP > Servers** e adicione um novo servidor com as seguintes configurações:<br>
-   ![](./assets/phpstorm-debug-docker.png)
-   
-   > ** Note **
-   > 
+   ![](./assets/phpstorm-debug-docker.png)<br>
    > É importante não esquecer de mapear corretamente o diretório _/app_ para _/home/app_
 2. Inicie o listener do PHPStorm:<br>
    ![](./assets/phpstorm-debug-start.png)
