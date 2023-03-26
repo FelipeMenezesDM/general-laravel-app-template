@@ -4,6 +4,9 @@
          bootstrap="vendor/autoload.php"
          colors="true"
 >
+    <testsuite name="Tests">
+        <directory>./tests</directory>
+    </testsuite>
     <coverage>
         <report>
             <html outputDirectory="./reports/unit" />

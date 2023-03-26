@@ -62,7 +62,7 @@
         ],
         "test-unit": [
             "Composer\\Config::disableProcessTimeout",
-            "./vendor/bin/phpunit ./tests"
+            "./vendor/bin/phpunit"
         ],
         "test-mutation": [
             "Composer\\Config::disableProcessTimeout",

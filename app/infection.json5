@@ -33,6 +33,5 @@
     "mutators": {
         "@default": true
     },
-    "ignoreMsiWithNoMutations": true,
-    "initialTestsPhpOptions": "./tests"
+    "ignoreMsiWithNoMutations": true
 }
