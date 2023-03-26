@@ -39,8 +39,8 @@ Para a instalação desta aplicação em ambiente local, é necessário ter inst
 
 #### Passo-a-passo
 1. [Baixe e instale um servidor PHP 8.1.0 em sua máquina](https://www.apachefriends.org/pt_br/index.html).
-2. [Baixe e instale a última versão do Composer em sua máquina](https://getcomposer.org/download/)
-3. [Baixe e instale o PHPStorm em sua máquina](https://www.jetbrains.com/pt-br/phpstorm/download/#section=windows)
+2. [Baixe e instale a última versão do Composer em sua máquina](https://getcomposer.org/download/).
+3. [Baixe e instale o PHPStorm em sua máquina](https://www.jetbrains.com/pt-br/phpstorm/download/#section=windows).
 4. Clone o projeto com o seguinte comando:
    ```
    git clone https://github.com/FelipeMenezesDM/general-laravel-app-template.git
@@ -65,7 +65,7 @@ Para a instalação em ambiente local desta aplicação usando Docker, você dev
    ```
    git clone https://github.com/FelipeMenezesDM/general-laravel-app-template.git
    ```
-2. [Baixe e instale a versão mais recente do Docker](https://docs.docker.com/desktop/install/windows-install/)
+2. [Baixe e instale a versão mais recente do Docker](https://docs.docker.com/desktop/install/windows-install/).
 3. Na pasta raíz do projeto, execute o comando abaixo para baixar as imagens e criar os containers do Docker:
    ```
    PORT=1080 docker compose -f ./infra/docker-compose.yml up -d
@@ -78,8 +78,9 @@ Para a instalação em ambiente local desta aplicação usando Docker, você dev
 6. Após isso, as chamadas dos endpoints podem ser realizadas para a URL local: [``http://localhost:1080/api/v1``](http://localhost:1080/api/v1).
 
 #### Debug com Docker
-1. Acesse File > Settings > PHP > Servers e adicione um novo servidor com as seguintes configurações:<br>
+1. Acesse **File > Settings > PHP > Servers** e adicione um novo servidor com as seguintes configurações:<br>
    ![](./assets/phpstorm-debug-docker.png)
+   
    > ** Note **
    > 
    > É importante não esquecer de mapear corretamente o diretório _/app_ para _/home/app_
