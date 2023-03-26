@@ -1,0 +1,25 @@
+{
+    "name": "felipemenezesdm/general-laravel-app-template-tests",
+    "description": "Pacote de testes integrados para o Template Geral de Aplicações Laravel",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "scripts": {
+        "test-integration": [
+            "Composer\\Config::disableProcessTimeout",
+            "./vendor/bin/behat"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "behat/behat": "^3.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
