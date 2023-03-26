@@ -54,11 +54,17 @@
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
+        "pre-update-cmd": [
+            "@create-env-file"
+        ],
         "pre-install-cmd": [
-            "@php -r 'file_exists(\".env\") || copy(\"./environments/\" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . \".env\", \".env\"); echo \"Environment: \" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . PHP_EOL;'"
+            "@create-env-file"
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "create-env-file": [
+            "@php -r 'file_exists(\".env\") || copy(\"./environments/\" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . \".env\", \".env\"); echo \"Environment: \" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . PHP_EOL;'"
         ],
         "test-unit": [
             "Composer\\Config::disableProcessTimeout",
