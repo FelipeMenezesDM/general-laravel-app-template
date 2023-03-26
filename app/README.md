@@ -73,7 +73,7 @@
 ```
 </details>
 <details>
-<summary>200 NO CONTENT</summary>
+<summary>204 NO CONTENT</summary>
 
 ```
 EMPTY
@@ -87,6 +87,20 @@ EMPTY
 ### $\textcolor{orangered}{\textsf{• DELETE}}$/end-points/{id}
 ### $\textcolor{cyan}{\textsf{• HEAD}}$/end-points/{id}
 ### $\textcolor{lightcoral}{\textsf{• OPTIONS}}$/end-points/{id}
+
+### $\textcolor{blue}{\textsf{• GET}}$/health-check
+Checar estado da aplicação para validar sua integridade em relação à sua infraestrutura.
+
+#### Saídas
+<details>
+<summary>200 OK</summary>
+
+```json
+{
+    "healthy": true
+}
+```
+</details>
 
 ## Integrações
 {{ Informar lista não numerada de todos os serviços externos ou internos utilizados pela aplicação }}
