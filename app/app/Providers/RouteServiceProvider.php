@@ -28,7 +28,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->routes(function () {
             Route::middleware('api')
-                ->prefix(getenv('APP_API_CONTEXT', ''))
+                ->prefix(env('APP_API_CONTEXT', ''))
                 ->group(base_path('routes/api.php'));
 
 //            Route::middleware('web')
