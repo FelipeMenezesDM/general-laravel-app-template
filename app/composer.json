@@ -64,7 +64,7 @@
             "@php artisan key:generate --ansi"
         ],
         "create-env-file": [
-            "@php -r 'file_exists(\".env\") || copy(\"./environments/\" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . \".env\", \".env\"); echo \"Environment: \" . strtoupper(getenv(\"APP_ENV\") ?: 'local') . PHP_EOL;'"
+            "@php -r \"file_exists('.env') || copy('./environments/' . strtoupper(getenv('APP_ENV') ?: 'local') . '.env', '.env'); echo 'Environment: ' . strtoupper(getenv('APP_ENV') ?: 'local') . PHP_EOL;\""
         ],
         "test-unit": [
             "Composer\\Config::disableProcessTimeout",
