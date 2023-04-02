@@ -668,12 +668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FelipeMenezesDM/laravel-secret-manager-suite.git",
-                "reference": "8e0626241f4d3733c8f2d7bb54ae111abf6d5326"
+                "reference": "62624e153a0368aa97501e780c2a6974f88cbccb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FelipeMenezesDM/laravel-secret-manager-suite/zipball/8e0626241f4d3733c8f2d7bb54ae111abf6d5326",
-                "reference": "8e0626241f4d3733c8f2d7bb54ae111abf6d5326",
+                "url": "https://api.github.com/repos/FelipeMenezesDM/laravel-secret-manager-suite/zipball/62624e153a0368aa97501e780c2a6974f88cbccb",
+                "reference": "62624e153a0368aa97501e780c2a6974f88cbccb",
                 "shasum": ""
             },
             "require": {
@@ -704,7 +704,7 @@
                 "issues": "https://github.com/FelipeMenezesDM/laravel-secret-manager-suite/issues",
                 "source": "https://github.com/FelipeMenezesDM/laravel-secret-manager-suite/tree/v1.0.0"
             },
-            "time": "2023-04-01T21:45:29+00:00"
+            "time": "2023-04-02T04:36:27+00:00"
         },
         {
             "name": "firebase/php-jwt",
